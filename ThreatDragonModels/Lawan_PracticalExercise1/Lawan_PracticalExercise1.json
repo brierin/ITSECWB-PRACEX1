@@ -1936,7 +1936,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Data Flow",
+              "name": "Login / request\nincoming orders",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -1950,7 +1950,7 @@
               "trustBoundaryIds": []
             },
             "labels": [
-              "Data Flow"
+              "Login / request\nincoming orders"
             ],
             "id": "9fcc3ed4-6633-4a39-8715-8dd1dc5f18fb",
             "source": {
@@ -1964,7 +1964,7 @@
             "vertices": [
               {
                 "x": 360,
-                "y": 170
+                "y": 160
               }
             ]
           },
@@ -1988,7 +1988,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Data Flow",
+              "name": "Display order list",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -2002,7 +2002,7 @@
               "trustBoundaryIds": []
             },
             "labels": [
-              "Data Flow"
+              "Display order list"
             ],
             "id": "8e957c5c-7a94-4524-8380-78fab4cc8e25",
             "source": {
@@ -2040,7 +2040,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Data Flow",
+              "name": "Update order status",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -2054,7 +2054,7 @@
               "trustBoundaryIds": []
             },
             "labels": [
-              "Data Flow"
+              "Update order status"
             ],
             "id": "376522f2-4d64-4e21-8012-706bd1495128",
             "source": {
@@ -2068,7 +2068,7 @@
             "vertices": [
               {
                 "x": 360,
-                "y": 150
+                "y": 130
               }
             ]
           },
@@ -2092,7 +2092,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Data Flow",
+              "name": "Update confirmation",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -2106,7 +2106,7 @@
               "trustBoundaryIds": []
             },
             "labels": [
-              "Data Flow"
+              "Update confirmation"
             ],
             "id": "4ff6e256-7d83-4ff6-b5c7-2f29d91af64a",
             "source": {
@@ -2120,7 +2120,7 @@
             "vertices": [
               {
                 "x": 360,
-                "y": 240
+                "y": 250
               }
             ]
           }
