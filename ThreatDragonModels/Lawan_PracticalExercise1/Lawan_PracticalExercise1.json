@@ -23,7 +23,7 @@
               "y": 50.00000000000023
             },
             "size": {
-              "width": 620,
+              "width": 550,
               "height": 170
             },
             "attrs": {
@@ -33,8 +33,8 @@
             },
             "visible": true,
             "shape": "trust-boundary-box",
-            "id": "768604e5-d69c-4777-a35a-b28c9ea45076",
             "zIndex": -1,
+            "id": "768604e5-d69c-4777-a35a-b28c9ea45076",
             "data": {
               "type": "tm.BoundaryBox",
               "name": "BOUNDARY A: Untrusted Client Side",
@@ -53,12 +53,12 @@
           },
           {
             "position": {
-              "x": 672,
-              "y": 50.00000000000024
+              "x": 602,
+              "y": 50.000000000000426
             },
             "size": {
-              "width": 130,
-              "height": 150
+              "width": 300,
+              "height": 200
             },
             "attrs": {
               "label": {
@@ -67,8 +67,8 @@
             },
             "visible": true,
             "shape": "trust-boundary-box",
-            "id": "b7696930-c4cc-44ac-bd50-4d1507023b70",
             "zIndex": -1,
+            "id": "b7696930-c4cc-44ac-bd50-4d1507023b70",
             "data": {
               "type": "tm.BoundaryBox",
               "name": "BOUNDARY B: \nApp server",
@@ -90,11 +90,11 @@
           },
           {
             "position": {
-              "x": 821,
-              "y": 50.00000000000041
+              "x": 911,
+              "y": 50.00000000000031
             },
             "size": {
-              "width": 360,
+              "width": 270,
               "height": 150
             },
             "attrs": {
@@ -104,8 +104,8 @@
             },
             "visible": true,
             "shape": "trust-boundary-box",
-            "id": "395a05df-97eb-4200-aace-a8fc460bd51c",
             "zIndex": -1,
+            "id": "395a05df-97eb-4200-aace-a8fc460bd51c",
             "data": {
               "type": "tm.BoundaryBox",
               "name": "BOUNDARY C: 3rd Party Service",
@@ -123,15 +123,16 @@
           },
           {
             "position": {
-              "x": 659.9999999999998,
-              "y": 220.00000000000023
+              "x": 619.9999999999998,
+              "y": 265.9999999999998
             },
             "size": {
-              "width": 230,
-              "height": 220
+              "width": 270,
+              "height": 180
             },
             "visible": true,
             "shape": "trust-boundary-box",
+            "zIndex": -1,
             "id": "a99cc8ee-355f-41ff-a7b9-2b277c313849",
             "data": {
               "type": "tm.BoundaryBox",
@@ -146,8 +147,7 @@
               "containedElements": [
                 "301c739a-fcdf-470c-a738-49191901d09b"
               ]
-            },
-            "zIndex": -1
+            }
           },
           {
             "position": {
@@ -170,6 +170,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 1,
             "ports": {
               "groups": {
                 "top": {
@@ -253,7 +254,6 @@
               ]
             },
             "id": "f0f12052-89f9-41d7-9296-e8347de8298b",
-            "zIndex": 1,
             "data": {
               "type": "tm.Actor",
               "name": "Customer",
@@ -287,6 +287,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 2,
             "ports": {
               "groups": {
                 "top": {
@@ -370,7 +371,6 @@
               ]
             },
             "id": "4e15fd27-2954-4133-8452-701b3fa8e503",
-            "zIndex": 2,
             "data": {
               "type": "tm.Process",
               "name": "Web\nFrontend",
@@ -407,6 +407,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 3,
             "ports": {
               "groups": {
                 "top": {
@@ -503,8 +504,7 @@
               "isWebApplication": false,
               "privilegeLevel": "",
               "threats": []
-            },
-            "zIndex": 3
+            }
           },
           {
             "position": {
@@ -527,6 +527,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 4,
             "ports": {
               "groups": {
                 "top": {
@@ -620,8 +621,7 @@
               "hasOpenThreats": false,
               "providesAuthentication": false,
               "threats": []
-            },
-            "zIndex": 4
+            }
           },
           {
             "position": {
@@ -647,6 +647,7 @@
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 5,
             "ports": {
               "groups": {
                 "top": {
@@ -730,7 +731,6 @@
               ]
             },
             "id": "301c739a-fcdf-470c-a738-49191901d09b",
-            "zIndex": 5,
             "data": {
               "type": "tm.Store",
               "name": "MongoDB",
@@ -1183,8 +1183,8 @@
           },
           {
             "position": {
-              "x": 659.9999999999998,
-              "y": 396
+              "x": 637,
+              "y": 406
             },
             "size": {
               "width": 200,
@@ -1197,8 +1197,8 @@
             },
             "visible": true,
             "shape": "td-text-block",
-            "id": "31120e1c-0849-4371-a96c-5b6b4d6eaf4f",
             "zIndex": 11,
+            "id": "31120e1c-0849-4371-a96c-5b6b4d6eaf4f",
             "data": {
               "type": "tm.Text",
               "name": "BOUNDARY D: Database Zone",
