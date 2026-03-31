@@ -3444,13 +3444,6 @@
                 "informationDisclosure": 1,
                 "denialOfService": 1
               }
-            },
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove"
-              ],
-              "name": null
             }
           },
           {
