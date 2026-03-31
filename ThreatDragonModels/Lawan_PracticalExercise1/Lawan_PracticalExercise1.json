@@ -99,7 +99,7 @@
             },
             "attrs": {
               "label": {
-                "text": "BOUNDARY C: 3rd Party Service"
+                "text": "BOUNDARY C: Third-Party Service"
               }
             },
             "visible": true,
@@ -108,7 +108,7 @@
             "id": "395a05df-97eb-4200-aace-a8fc460bd51c",
             "data": {
               "type": "tm.BoundaryBox",
-              "name": "BOUNDARY C: 3rd Party Service",
+              "name": "BOUNDARY C: Third-Party Service",
               "description": "",
               "isTrustBoundary": true,
               "hasOpenThreats": false,
@@ -163,8 +163,8 @@
                 "text": "Customer"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -261,9 +261,34 @@
               "isTrustBoundary": false,
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "providesAuthentication": false,
-              "threats": []
+              "threats": [
+                {
+                  "id": "9ca7e8b7-e5a6-45dc-8dde-4e77f12bf87e",
+                  "title": "Customer Account Spoofing",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Spoofing",
+                  "description": "An attacker could impersonate a legitimate customer to place\nfraudulent orders or access their order history.",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 1,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 1,
+                "repudiation": 0
+              }
+            },
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove"
+              ],
+              "name": null
             }
           },
           {
@@ -1237,6 +1262,6 @@
     ],
     "diagramTop": 5,
     "reviewer": "",
-    "threatTop": 0
+    "threatTop": 1
   }
 }
