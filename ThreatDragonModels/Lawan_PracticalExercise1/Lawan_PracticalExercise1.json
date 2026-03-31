@@ -2684,9 +2684,27 @@
             "vertices": []
           }
         ]
+      },
+      {
+        "id": 7,
+        "title": "Manager Accesses Basic Sales Reports",
+        "diagramType": "STRIDE",
+        "placeholder": "New STRIDE diagram description",
+        "thumbnail": "./public/content/images/thumbnail.stride.jpg",
+        "version": "2.6.1-RC1",
+        "cells": []
+      },
+      {
+        "id": 8,
+        "title": "Administrator Adds New Menu Item",
+        "diagramType": "STRIDE",
+        "placeholder": "New STRIDE diagram description",
+        "thumbnail": "./public/content/images/thumbnail.stride.jpg",
+        "version": "2.6.1-RC1",
+        "cells": []
       }
     ],
-    "diagramTop": 7,
+    "diagramTop": 9,
     "reviewer": "",
     "threatTop": 30
   }
