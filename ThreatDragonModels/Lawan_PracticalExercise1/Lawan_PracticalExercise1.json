@@ -4013,8 +4013,8 @@
                 "text": "Web\nFrontend"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -4111,19 +4111,34 @@
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "handlesCardPayment": false,
               "handlesGoodsOrServices": false,
               "isWebApplication": false,
               "privilegeLevel": "",
-              "threats": []
-            },
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove"
+              "threats": [
+                {
+                  "id": "506aa2a6-ab9f-4246-b5e3-581416832394",
+                  "title": "T-002 Staff Account Spoofing",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Spoofing",
+                  "description": "An attacker could impersonate staff to manipulate order statuses, \naccess sales reports, or modify menu items and application \nconfigurations.",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 43,
+                  "score": ""
+                }
               ],
-              "name": null
+              "threatFrequency": {
+                "spoofing": 1,
+                "tampering": 0,
+                "repudiation": 0,
+                "informationDisclosure": 0,
+                "denialOfService": 0,
+                "elevationOfPrivilege": 0
+              }
             }
           },
           {
@@ -4140,8 +4155,8 @@
                 "text": "Web\nServer"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -4237,12 +4252,112 @@
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "handlesCardPayment": false,
               "handlesGoodsOrServices": false,
               "isWebApplication": false,
               "privilegeLevel": "",
-              "threats": []
+              "threats": [
+                {
+                  "id": "fcab5f11-defb-410b-9e25-b91bb84e2035",
+                  "title": "T-002 Staff Account Spoofing",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Spoofing",
+                  "description": "An attacker could impersonate staff to manipulate order statuses, \naccess sales reports, or modify menu items and application \nconfigurations.\n",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 44,
+                  "score": ""
+                },
+                {
+                  "id": "72ae4d79-ec18-4f55-8a9b-4d40e74b9924",
+                  "title": "T-005 Menu Data Tampering",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Tampering",
+                  "description": "An attacker could alter menu item data (e.g., prices or descriptions) \nbefore it is stored in the database",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 45,
+                  "score": ""
+                },
+                {
+                  "id": "b0ccd926-d999-4831-90e5-f50d41ababe1",
+                  "title": "T-007 Application Code/Configuration Tampering",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Tampering",
+                  "description": "Malicious modification of the application’s source code, server \nconfigurations, or environment variables could introduce backdoors or \ndisable security features.",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 46,
+                  "score": ""
+                },
+                {
+                  "id": "399b0421-5b2a-4e8a-859a-acebd424692f",
+                  "title": "T-011 Staff Credential Disclosure",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Information disclosure",
+                  "description": "Exposure of usernames, passwords, or session tokens for staff members \ndue to insecure storage or unencrypted transmission.",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 47,
+                  "score": ""
+                },
+                {
+                  "id": "8f3b52d8-42e2-4a12-afb8-01759966778a",
+                  "title": "T-012 Application Code and Configuration Disclosure",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Information disclosure",
+                  "description": "Exposure of source code, server configurations, environment variables, \nor API keys",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 48,
+                  "score": ""
+                },
+                {
+                  "id": "88051fc2-a976-4eb7-9ee2-e24099196f3f",
+                  "title": "T-014 Web Application Server DoS",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Denial of service",
+                  "description": "An attacker could flood the Web Application Server with excessive \nrequests, making it unavailable.",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 49,
+                  "score": ""
+                },
+                {
+                  "id": "1d89be35-a5d6-4be1-9082-27177de83c75",
+                  "title": "T-017 Barista/Manager to Administrator Privilege Escalation",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Elevation of privilege",
+                  "description": "A Barista or Manager could exploit a vulnerability to gain Administrator \nprivileges.",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 50,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 1,
+                "tampering": 2,
+                "repudiation": 0,
+                "informationDisclosure": 2,
+                "denialOfService": 1,
+                "elevationOfPrivilege": 1
+              }
             },
             "zIndex": 3
           },
@@ -4260,11 +4375,13 @@
                 "text": "MongoDB"
               },
               "topLine": {
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               },
               "bottomLine": {
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -4361,13 +4478,53 @@
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "isALog": false,
               "isEncrypted": false,
               "isSigned": false,
               "storesCredentials": false,
               "storesInventory": false,
-              "threats": []
+              "threats": [
+                {
+                  "id": "7c3a53ef-3e15-42c1-b36c-1a02692abe58",
+                  "title": "T-005 Menu Data Tampering",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Tampering",
+                  "description": "An attacker could alter menu item data (e.g., prices or descriptions) \nbefore it is stored in the database.",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 51,
+                  "score": ""
+                },
+                {
+                  "id": "d7974a7d-03d4-435b-aea3-da984fee14b8",
+                  "title": "T-011 Staff Credential Disclosure",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Information disclosure",
+                  "description": "Exposure of usernames, passwords, or session tokens for staff members \ndue to insecure storage or unencrypted transmission.",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 52,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 1,
+                "repudiation": 0,
+                "informationDisclosure": 1,
+                "denialOfService": 0
+              }
+            },
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove"
+              ],
+              "name": null
             }
           },
           {
@@ -4699,6 +4856,6 @@
     ],
     "diagramTop": 9,
     "reviewer": "",
-    "threatTop": 42
+    "threatTop": 52
   }
 }
