@@ -826,13 +826,6 @@
                 "informationDisclosure": 1,
                 "denialOfService": 0
               }
-            },
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove"
-              ],
-              "name": null
             }
           },
           {
@@ -1269,21 +1262,237 @@
             "labels": [
               ""
             ],
-            "id": "637c39d0-6ff3-4c71-a5d5-3917e93936b8",
+            "id": "de3bdfe8-a574-4a82-9e80-db6f5f2a14c2",
             "source": {
-              "x": 470,
+              "x": 560,
               "y": 50
             },
             "target": {
-              "x": 490,
-              "y": 250
+              "x": 560,
+              "y": 260
             },
             "vertices": [
               {
-                "x": 610,
+                "x": 630,
                 "y": 140
               }
             ]
+          },
+          {
+            "shape": "trust-boundary-curve",
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Boundary",
+              "name": "",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false,
+              "crossingFlows": [],
+              "containedElements": []
+            },
+            "labels": [
+              ""
+            ],
+            "id": "ffa6da16-5fa2-49e7-a282-102db343fff4",
+            "source": {
+              "x": 870,
+              "y": 40
+            },
+            "target": {
+              "x": 870,
+              "y": 260
+            },
+            "vertices": [
+              {
+                "x": 920,
+                "y": 140
+              }
+            ],
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead"
+              ],
+              "name": null
+            }
+          },
+          {
+            "shape": "trust-boundary-curve",
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Boundary",
+              "name": "BOUNDARY C:Database Zone",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false,
+              "crossingFlows": [],
+              "containedElements": []
+            },
+            "labels": [
+              "BOUNDARY C:Database Zone"
+            ],
+            "id": "1bd9fa87-2b72-4f64-8017-a74516e4d2d6",
+            "source": {
+              "x": 620,
+              "y": 260
+            },
+            "target": {
+              "x": 840,
+              "y": 270
+            },
+            "vertices": [
+              {
+                "x": 740,
+                "y": 200
+              }
+            ],
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead"
+              ],
+              "name": null
+            }
+          },
+          {
+            "position": {
+              "x": 450,
+              "y": 210
+            },
+            "size": {
+              "width": 112.5,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "BOUNDARY A: Untrusted \nClient Side"
+              }
+            },
+            "visible": true,
+            "shape": "td-text-block",
+            "id": "a79e0e57-0ed5-4aea-a3a5-331caf2b121b",
+            "zIndex": 11,
+            "data": {
+              "type": "tm.Text",
+              "name": "BOUNDARY A: Untrusted \nClient Side",
+              "hasOpenThreats": false
+            }
+          },
+          {
+            "position": {
+              "x": 890,
+              "y": 230
+            },
+            "size": {
+              "width": 112.5,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "BOUNDARY B: Server"
+              }
+            },
+            "visible": true,
+            "shape": "td-text-block",
+            "id": "c6ae0cfa-97f5-429b-ae2d-e74c57cc3da1",
+            "zIndex": 12,
+            "data": {
+              "type": "tm.Text",
+              "name": "BOUNDARY B: Server",
+              "hasOpenThreats": false
+            }
           }
         ]
       },
