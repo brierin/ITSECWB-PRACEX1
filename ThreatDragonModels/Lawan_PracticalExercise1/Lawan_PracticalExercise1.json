@@ -1506,112 +1506,6 @@
         "cells": [
           {
             "position": {
-              "x": 70.99999999999949,
-              "y": 100.00000000000051
-            },
-            "size": {
-              "width": 580,
-              "height": 180
-            },
-            "attrs": {
-              "label": {
-                "text": "BOUNDARY A: Untrusted Client Side"
-              }
-            },
-            "visible": true,
-            "shape": "trust-boundary-box",
-            "id": "7eec5582-4274-49f2-87b0-b91bee84e741",
-            "zIndex": -1,
-            "data": {
-              "type": "tm.BoundaryBox",
-              "name": "BOUNDARY A: Untrusted Client Side",
-              "description": "",
-              "isTrustBoundary": true,
-              "hasOpenThreats": false,
-              "crossingFlows": [
-                "73c60d90-d313-4bae-9bd7-1cc2bacc5b7a",
-                "fc1b6b3a-f19a-4211-826a-ebb80c48545c",
-                "2bc0ef0d-3e29-462f-99fc-66bffdd8905c"
-              ],
-              "containedElements": [
-                "a0953127-d255-4e0d-9c4f-f63ec0ff6ad3",
-                "97d33f22-d0ca-4649-94d4-bd57ae976042"
-              ]
-            }
-          },
-          {
-            "position": {
-              "x": 662.9999999999995,
-              "y": 100.00000000000051
-            },
-            "size": {
-              "width": 290,
-              "height": 180
-            },
-            "attrs": {
-              "label": {
-                "text": "BOUNDARY B: Server"
-              }
-            },
-            "visible": true,
-            "shape": "trust-boundary-box",
-            "id": "99a88d59-09d4-48ad-a453-564100587125",
-            "data": {
-              "type": "tm.BoundaryBox",
-              "name": "BOUNDARY B: Server",
-              "description": "",
-              "isTrustBoundary": true,
-              "hasOpenThreats": false,
-              "crossingFlows": [
-                "73c60d90-d313-4bae-9bd7-1cc2bacc5b7a",
-                "fc1b6b3a-f19a-4211-826a-ebb80c48545c",
-                "2bc0ef0d-3e29-462f-99fc-66bffdd8905c",
-                "304c9fe5-f2f5-4d89-896f-ea6b77625b18",
-                "91e8a838-73ba-487a-8069-5649f7c15562",
-                "d2175597-7c34-4709-9a38-b1e751e9ca37"
-              ],
-              "containedElements": [
-                "edde0aab-bc54-495a-8ee3-9ae3707fc30c"
-              ]
-            },
-            "zIndex": -1
-          },
-          {
-            "position": {
-              "x": 964.9999999999995,
-              "y": 100.00000000000051
-            },
-            "size": {
-              "width": 290,
-              "height": 180
-            },
-            "attrs": {
-              "label": {
-                "text": "BOUNDARY C: Database Zone"
-              }
-            },
-            "visible": true,
-            "shape": "trust-boundary-box",
-            "id": "863b43e8-1070-4355-9e87-50fba420f883",
-            "data": {
-              "type": "tm.BoundaryBox",
-              "name": "BOUNDARY C: Database Zone",
-              "description": "",
-              "isTrustBoundary": true,
-              "hasOpenThreats": false,
-              "crossingFlows": [
-                "304c9fe5-f2f5-4d89-896f-ea6b77625b18",
-                "91e8a838-73ba-487a-8069-5649f7c15562",
-                "d2175597-7c34-4709-9a38-b1e751e9ca37"
-              ],
-              "containedElements": [
-                "c5ce1963-9537-4b89-92a0-de4562f70f17"
-              ]
-            },
-            "zIndex": -1
-          },
-          {
-            "position": {
               "x": 110,
               "y": 159.99999999999997
             },
@@ -1631,6 +1525,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 1,
             "ports": {
               "groups": {
                 "top": {
@@ -1714,7 +1609,6 @@
               ]
             },
             "id": "a0953127-d255-4e0d-9c4f-f63ec0ff6ad3",
-            "zIndex": 1,
             "data": {
               "type": "tm.Actor",
               "name": "Barista",
@@ -1748,6 +1642,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 2,
             "ports": {
               "groups": {
                 "top": {
@@ -1831,7 +1726,6 @@
               ]
             },
             "id": "97d33f22-d0ca-4649-94d4-bd57ae976042",
-            "zIndex": 2,
             "data": {
               "type": "tm.Process",
               "name": "Web\nFrontend",
@@ -1890,6 +1784,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 3,
             "ports": {
               "groups": {
                 "top": {
@@ -2086,8 +1981,7 @@
                 "denialOfService": 1,
                 "elevationOfPrivilege": 2
               }
-            },
-            "zIndex": 3
+            }
           },
           {
             "position": {
@@ -2115,6 +2009,7 @@
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 4,
             "ports": {
               "groups": {
                 "top": {
@@ -2198,7 +2093,6 @@
               ]
             },
             "id": "c5ce1963-9537-4b89-92a0-de4562f70f17",
-            "zIndex": 4,
             "data": {
               "type": "tm.Store",
               "name": "MongoDB",
@@ -2463,10 +2357,7 @@
               "isPublicNetwork": false,
               "protocol": "",
               "threats": [],
-              "trustBoundaryIds": [
-                "7eec5582-4274-49f2-87b0-b91bee84e741",
-                "99a88d59-09d4-48ad-a453-564100587125"
-              ]
+              "trustBoundaryIds": []
             },
             "labels": [
               "Credentials / \norder request"
@@ -2518,10 +2409,7 @@
               "isPublicNetwork": false,
               "protocol": "",
               "threats": [],
-              "trustBoundaryIds": [
-                "7eec5582-4274-49f2-87b0-b91bee84e741",
-                "99a88d59-09d4-48ad-a453-564100587125"
-              ]
+              "trustBoundaryIds": []
             },
             "labels": [
               "Order list"
@@ -2573,10 +2461,7 @@
               "isPublicNetwork": false,
               "protocol": "",
               "threats": [],
-              "trustBoundaryIds": [
-                "7eec5582-4274-49f2-87b0-b91bee84e741",
-                "99a88d59-09d4-48ad-a453-564100587125"
-              ]
+              "trustBoundaryIds": []
             },
             "labels": [
               "Updated order status"
@@ -2623,10 +2508,7 @@
               "isPublicNetwork": false,
               "protocol": "",
               "threats": [],
-              "trustBoundaryIds": [
-                "99a88d59-09d4-48ad-a453-564100587125",
-                "863b43e8-1070-4355-9e87-50fba420f883"
-              ]
+              "trustBoundaryIds": []
             },
             "labels": [
               "Query pending orders"
@@ -2678,10 +2560,7 @@
               "isPublicNetwork": false,
               "protocol": "",
               "threats": [],
-              "trustBoundaryIds": [
-                "99a88d59-09d4-48ad-a453-564100587125",
-                "863b43e8-1070-4355-9e87-50fba420f883"
-              ]
+              "trustBoundaryIds": []
             },
             "labels": [
               "Pending order data"
@@ -2733,10 +2612,7 @@
               "isPublicNetwork": false,
               "protocol": "",
               "threats": [],
-              "trustBoundaryIds": [
-                "99a88d59-09d4-48ad-a453-564100587125",
-                "863b43e8-1070-4355-9e87-50fba420f883"
-              ]
+              "trustBoundaryIds": []
             },
             "labels": [
               "Update order record"
@@ -2751,6 +2627,122 @@
               "port": "5b0ff716-4f64-48de-bd51-c4ec2d655102"
             },
             "vertices": []
+          },
+          {
+            "shape": "trust-boundary-curve",
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Boundary",
+              "name": "",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false,
+              "crossingFlows": [],
+              "containedElements": []
+            },
+            "labels": [
+              ""
+            ],
+            "id": "590dd224-3d5e-4162-8bbe-788c031abbab",
+            "source": {
+              "x": 620,
+              "y": 90
+            },
+            "target": {
+              "x": 610,
+              "y": 330
+            },
+            "vertices": [
+              {
+                "x": 670,
+                "y": 210
+              }
+            ]
+          },
+          {
+            "shape": "trust-boundary-curve",
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Boundary",
+              "name": "",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false,
+              "crossingFlows": [],
+              "containedElements": []
+            },
+            "labels": [
+              ""
+            ],
+            "id": "032e1f20-0cbd-4c4d-bb8c-6b5dd8bd5685",
+            "source": {
+              "x": 950,
+              "y": 80
+            },
+            "target": {
+              "x": 940,
+              "y": 370
+            },
+            "vertices": [
+              {
+                "x": 990,
+                "y": 210
+              }
+            ]
+          },
+          {
+            "position": {
+              "x": 500,
+              "y": 280
+            },
+            "size": {
+              "width": 112.5,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "BOUNDARY A: Untrusted \nClient Side"
+              }
+            },
+            "visible": true,
+            "shape": "td-text-block",
+            "id": "904b4c64-fed2-449a-81d5-712efd23eb2e",
+            "zIndex": 11,
+            "data": {
+              "type": "tm.Text",
+              "name": "BOUNDARY A: Untrusted \nClient Side",
+              "hasOpenThreats": false
+            }
+          },
+          {
+            "position": {
+              "x": 840,
+              "y": 280
+            },
+            "size": {
+              "width": 112.5,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "BOUNDARY B: \nDatabase Zone"
+              }
+            },
+            "visible": true,
+            "shape": "td-text-block",
+            "id": "172bf916-291c-4a16-9f3a-49ec0ad30541",
+            "zIndex": 12,
+            "data": {
+              "type": "tm.Text",
+              "name": "BOUNDARY B: \nDatabase Zone",
+              "hasOpenThreats": false
+            }
           }
         ]
       },
