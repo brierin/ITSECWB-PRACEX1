@@ -19,138 +19,6 @@
         "cells": [
           {
             "position": {
-              "x": 39.99999999999977,
-              "y": 50.00000000000023
-            },
-            "size": {
-              "width": 550,
-              "height": 170
-            },
-            "attrs": {
-              "label": {
-                "text": "BOUNDARY A: Untrusted Client Side"
-              }
-            },
-            "visible": true,
-            "shape": "trust-boundary-box",
-            "zIndex": -1,
-            "id": "768604e5-d69c-4777-a35a-b28c9ea45076",
-            "data": {
-              "type": "tm.BoundaryBox",
-              "name": "BOUNDARY A: Untrusted Client Side",
-              "description": "",
-              "isTrustBoundary": true,
-              "hasOpenThreats": false,
-              "crossingFlows": [
-                "7a2cea94-afd9-41c5-b1e3-4b5f898645e6",
-                "a40382ee-4819-443f-b6f3-3da0fb09cf6d"
-              ],
-              "containedElements": [
-                "f0f12052-89f9-41d7-9296-e8347de8298b",
-                "4e15fd27-2954-4133-8452-701b3fa8e503"
-              ]
-            }
-          },
-          {
-            "position": {
-              "x": 602,
-              "y": 50.000000000000426
-            },
-            "size": {
-              "width": 300,
-              "height": 200
-            },
-            "attrs": {
-              "label": {
-                "text": "BOUNDARY B: \nApp server"
-              }
-            },
-            "visible": true,
-            "shape": "trust-boundary-box",
-            "zIndex": -1,
-            "id": "b7696930-c4cc-44ac-bd50-4d1507023b70",
-            "data": {
-              "type": "tm.BoundaryBox",
-              "name": "BOUNDARY B: \nApp server",
-              "description": "",
-              "isTrustBoundary": true,
-              "hasOpenThreats": false,
-              "crossingFlows": [
-                "7a2cea94-afd9-41c5-b1e3-4b5f898645e6",
-                "cb103ffa-118e-4bad-8c98-e23c12bbeee5",
-                "198a993f-bcb1-40fa-a63c-390920750e5a",
-                "a40382ee-4819-443f-b6f3-3da0fb09cf6d",
-                "326d7e66-7bfc-47b3-8e0c-12aae5a996dc",
-                "fe333763-dc68-4972-a1d7-e352caef3234"
-              ],
-              "containedElements": [
-                "89c4f5c8-1777-4dd3-a2be-3cb84d2780fb"
-              ]
-            }
-          },
-          {
-            "position": {
-              "x": 911,
-              "y": 50.00000000000031
-            },
-            "size": {
-              "width": 270,
-              "height": 150
-            },
-            "attrs": {
-              "label": {
-                "text": "BOUNDARY C: Third-Party Service"
-              }
-            },
-            "visible": true,
-            "shape": "trust-boundary-box",
-            "zIndex": -1,
-            "id": "395a05df-97eb-4200-aace-a8fc460bd51c",
-            "data": {
-              "type": "tm.BoundaryBox",
-              "name": "BOUNDARY C: Third-Party Service",
-              "description": "",
-              "isTrustBoundary": true,
-              "hasOpenThreats": false,
-              "crossingFlows": [
-                "198a993f-bcb1-40fa-a63c-390920750e5a",
-                "fe333763-dc68-4972-a1d7-e352caef3234"
-              ],
-              "containedElements": [
-                "1ec76b22-ad62-4993-bdbb-8b6d6a25c72a"
-              ]
-            }
-          },
-          {
-            "position": {
-              "x": 619.9999999999998,
-              "y": 265.9999999999998
-            },
-            "size": {
-              "width": 270,
-              "height": 180
-            },
-            "visible": true,
-            "shape": "trust-boundary-box",
-            "zIndex": -1,
-            "id": "a99cc8ee-355f-41ff-a7b9-2b277c313849",
-            "data": {
-              "type": "tm.BoundaryBox",
-              "name": "",
-              "description": "",
-              "isTrustBoundary": true,
-              "hasOpenThreats": false,
-              "crossingFlows": [
-                "cb103ffa-118e-4bad-8c98-e23c12bbeee5",
-                "326d7e66-7bfc-47b3-8e0c-12aae5a996dc"
-              ],
-              "containedElements": [
-                "301c739a-fcdf-470c-a738-49191901d09b"
-              ]
-            }
-          },
-          {
-            "position": {
               "x": 80,
               "y": 105
             },
@@ -1050,10 +918,7 @@
               "isPublicNetwork": false,
               "protocol": "",
               "threats": [],
-              "trustBoundaryIds": [
-                "768604e5-d69c-4777-a35a-b28c9ea45076",
-                "b7696930-c4cc-44ac-bd50-4d1507023b70"
-              ]
+              "trustBoundaryIds": []
             },
             "labels": [
               "Send order details"
@@ -1105,10 +970,7 @@
               "isPublicNetwork": false,
               "protocol": "",
               "threats": [],
-              "trustBoundaryIds": [
-                "b7696930-c4cc-44ac-bd50-4d1507023b70",
-                "a99cc8ee-355f-41ff-a7b9-2b277c313849"
-              ]
+              "trustBoundaryIds": []
             },
             "labels": [
               "Store order\ndetails and \npayment status"
@@ -1160,10 +1022,7 @@
               "isPublicNetwork": false,
               "protocol": "",
               "threats": [],
-              "trustBoundaryIds": [
-                "b7696930-c4cc-44ac-bd50-4d1507023b70",
-                "395a05df-97eb-4200-aace-a8fc460bd51c"
-              ]
+              "trustBoundaryIds": []
             },
             "labels": [
               "Payment response"
@@ -1215,10 +1074,7 @@
               "isPublicNetwork": false,
               "protocol": "",
               "threats": [],
-              "trustBoundaryIds": [
-                "768604e5-d69c-4777-a35a-b28c9ea45076",
-                "b7696930-c4cc-44ac-bd50-4d1507023b70"
-              ]
+              "trustBoundaryIds": []
             },
             "labels": [
               "Order confirmation/\nupdated status"
@@ -1322,10 +1178,7 @@
               "isPublicNetwork": false,
               "protocol": "",
               "threats": [],
-              "trustBoundaryIds": [
-                "b7696930-c4cc-44ac-bd50-4d1507023b70",
-                "a99cc8ee-355f-41ff-a7b9-2b277c313849"
-              ]
+              "trustBoundaryIds": []
             },
             "labels": [
               "DB response"
@@ -1377,10 +1230,7 @@
               "isPublicNetwork": false,
               "protocol": "",
               "threats": [],
-              "trustBoundaryIds": [
-                "b7696930-c4cc-44ac-bd50-4d1507023b70",
-                "395a05df-97eb-4200-aace-a8fc460bd51c"
-              ]
+              "trustBoundaryIds": []
             },
             "labels": [
               "Tokenized payment\ninformation"
